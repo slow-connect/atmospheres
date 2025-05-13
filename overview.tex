@@ -1,0 +1,129 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[a4paper,margin=2cm]{geometry}
+
+% Math and tables
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{siunitx}
+\sisetup{per-mode=symbol}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Planetary Atmospheres Equations and Values}
+\author{Joseph Glenn Ladd}
+
+\begin{document}
+\maketitle
+
+\section{Gasses and Equation of State}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Mole-based Equation} & \textbf{Mass-based Equation} \\
+\hline
+Ideal Gas Constant ($R$) & Specific Gas Constant ($R_s$) \\
+$pV = nRT \quad (n = \text{mol})$ & $pV = mR_sT \quad (m = \text{mass})$ \\
+\hline
+\end{tabular}
+\caption{Comparison of Mole-based and Mass-based Ideal Gas Equations}
+\end{table}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|c|l|}
+\hline
+\textbf{Symbol} & \textbf{Unit} & \textbf{Note} \\
+\hline
+$p$ & Pa & Pressure \\
+$V$ & m$^3$ & Volume \\
+$m$ & kg & Mass \\
+$R_s$ & J·kg$^{-1}$·K$^{-1}$ & Specific Gas Constant \\
+$R$ & J·mol$^{-1}$·K$^{-1}$ & Ideal Gas Constant \\
+$T$ & K & Temperature \\
+$M$ & kg·mol$^{-1}$ & Molecular Weight (Molar mass) \\
+$n_V$ & m$^{-3}$ & Number of molecules per unit volume \\
+$\rho$ & kg·m$^{-3}$ & Density \\
+$\alpha$ & m$^3$·kg$^{-1}$ & Specific Volume \\
+$n$ & – & Moles \\
+\hline
+$N$ & kg·m·s$^{-2}$ & Newton (force) \\
+Pa & kg·m$^{-1}$·s$^{-2}$ & Pascal (pressure) \\
+$J$ & kg·m$^2$·s$^{-2}$ & Joule (energy) \\
+$N_A$ & mol$^{-1}$ & Avogadro’s Number ($6.022 \times 10^{23}$ particles/mol) \\
+\hline
+\end{tabular}
+\caption{Physical symbols, units, and associated meanings}
+\end{table}
+
+\section{Wave Symbols and Quantities}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Name} & \textbf{Meaning (Wave Context)} \\
+\hline
+$\lambda$       & Lambda     & Wavelength – distance between wave crests (m) \\
+$\nu$           & Nu         & Frequency – cycles per second (Hz = 1/s) \\
+$\bar{\nu}$     & Nu-bar     & Wave number – cycles per meter (1/m) \\
+$k$             & k          & Angular (circular) wave number – $k = 2\pi/\lambda$ (rad/m) \\
+$\omega$        & Omega      & Angular (circular) frequency – $\omega = 2\pi\nu$ (rad/s) \\
+$T$             & T          & Period – time per cycle (s) \\
+$v_p$           & v-sub-p    & Phase speed – speed at which wave phase propagates (m/s) \\
+\hline
+\end{tabular}
+\caption{Wave Symbols and Their Meanings}
+\end{table}
+
+\section{Radiomentric Quantities}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\small
+\begin{tabularx}{\textwidth}{|X|l|l|X|l|}
+\hline
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Units} & \textbf{Physical Meaning} & \textbf{Equation} \\
+\hline
+Radiant Power 
+\newline (Radiative Flux) 
+& \( \Phi \), \( F \)
+& \si{\watt} 
+& Total radiant energy emitted, transferred, or received per second.
+& \( \Phi = \frac{dQ}{dt} \) \\
+\hline
+Radiant Energy 
+\newline (Thermal energy) 
+& \( Q_e \), \( E \), \( W \)
+& \si{\joule} 
+& Total electromagnetic energy accumulated over time.
+& \( Q = \int \Phi(t)\, dt \) \\
+\hline
+Radiant Power per Unit Area 
+\newline (Irradiance, 
+\newline Radiative Flux Density, 
+\newline Exitance) 
+& \( E \), \( I \)
+& \si{\watt\per\meter\squared}
+& Power received per unit surface area (in, through, or out).
+& \( E = \frac{d\Phi}{dA} \) \\
+\hline
+Radiance 
+\newline (Specific Intensity)
+& \( L \)
+& \si{\watt\per\meter\squared\per\steradian}
+& Radiant power per unit area per solid angle in a specific direction.
+& \( L = \frac{d^2\Phi}{dA \cos\theta \, d\omega} \) \\
+\hline
+\end{tabularx}
+\caption{Radiometric Quantities: Symbols, Units, and Definitions}
+\end{table}
+
+\end{document}
