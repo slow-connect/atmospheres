@@ -1,20 +1,34 @@
-\documentclass{article}
-
+\documentclass[12pt, a4paper]{article} % add fleqn to flush left equations
+\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[a4paper,margin=2cm]{geometry}
-
-% Math and tables
-\usepackage{amsmath}
-\usepackage{tabularx}
-\usepackage{float}
+\usepackage{amsthm,amsmath,amssymb}
 \usepackage{siunitx}
-\sisetup{per-mode=symbol}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=2cm,bottom=3cm, headheight=2cm,top=4cm, voffset=0.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{tabularx}
+\usepackage{physics}         % For vector calculus and differential notation
+\usepackage{geometry}
+\usepackage{enumitem}        % Customizable lists
+\geometry{margin=2cm}
+\usepackage{float}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhf{}
 
-\title{Planetary Atmospheres Equations and Values}
-\author{Joseph Glenn Ladd}
+\setlength{\parskip}{1em} % Space between paragraphs
+\setlength{\parindent}{0pt}
+
+\renewcommand{\to}{\longrightarrow}
 
 \begin{document}
+
+\title{Planetary Atmospheres - Equation and Value Tables}
+\author{Group Effort}
+\date{\today}
+
 \maketitle
 
 \section{Gasses and Equation of State}
@@ -125,5 +139,62 @@ Radiance
 \end{tabularx}
 \caption{Radiometric Quantities: Symbols, Units, and Definitions}
 \end{table}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Equation} & \textbf{Name of Equation} & \textbf{Units of Result} \\
+\hline
+$L_\star = 4\pi R_\star^2 \sigma T_\star^4$ & Stefan–Boltzmann Law (Star Luminosity) & W (watts) \\
+\hline
+$F = \dfrac{L_\star}{4\pi d^2}$ & Solar Constant / Stellar Flux at Planet & W/m\textsuperscript{2} \\
+\hline
+$T_p = \left( \dfrac{(1 - A) F}{\sigma} \right)^{1/4}$ & Effective Temperature of a Planet & K (kelvin) \\
+\hline
+\end{tabular}
+\caption{Key equations for planetary energy balance}
+\end{table}
+
+\section{Energy Balance}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Equation} & \textbf{Name of Equation} & \textbf{Units of Result} \\
+\hline
+$L_\star = 4\pi R_\star^2 \sigma T_\star^4$ & Stefan–Boltzmann Law (Star Luminosity) & W (watts) \\
+\hline
+$F = \dfrac{L_\star}{4\pi d^2}$ & Solar Constant / Stellar Flux at Planet & W/m\textsuperscript{2} \\
+\hline
+$T_p = \left( \dfrac{(1 - A) F}{\sigma} \right)^{1/4}$ & Effective Temperature of a Planet & K (kelvin) \\
+\hline
+\end{tabular}
+\caption{Key equations for planetary energy balance}
+\end{table}
+
+\textbf{Definition of Values in above Equations:}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \( \sigma = 5.67 \times 10^{-8} \, \text{W} \cdot \text{m}^{-2} \cdot \text{K}^{-4} \) — Stefan–Boltzmann constant
+    \item \( R_\star = \) Radius of the star
+    \item \( d = \) Distance from star to planet
+    \item \( T_\star = \) Effective temperature of the star
+    \item \( T_p = \) Effective temperature of the planet
+    \item \( L_\star = \) Stellar luminosity
+    \item \( F = \) Flux at the planet
+    \item \( A = \) Albedo of the planet
+\end{itemize}
+
+\textbf{Useful Reference Values:}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \( R_\odot = 6.96 \times 10^8 \, \text{m} \) — Solar radius
+    \item \( \text{AU} = 1.496 \times 10^{11} \, \text{m} \) — Astronomical unit
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 \end{document}
