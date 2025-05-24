@@ -9,7 +9,7 @@
 \usepackage{enumitem}
 \usepackage{pifont}
 \usepackage{tabularx}
-\usepackage{physics}         % For vector calculus and differential notation
+% \usepackage{physics}         % For vector calculus and differential notation
 \usepackage{geometry}
 \usepackage{enumitem}        % Customizable lists
 \geometry{margin=2cm}
@@ -96,6 +96,21 @@ $v_p$           & v-sub-p    & Phase speed – speed at which wave phase propaga
 \caption{Wave Symbols and Their Meanings}
 \end{table}
 
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+& $\lambda$ & $\nu$ & $\bar{\nu}$ & $k$ & $\omega$  \\[1ex]
+\hline
+$\lambda$ & 1 & $\frac{c}{\nu}$ & $\frac{1}{\bar{\nu}}$ & $\frac{2\pi}{k}$ & $\frac{2\pi c}{\omega}$ \\[1ex] \hline
+$\nu$ & $\frac{c}{\lambda}$ & $1$ & $c\bar{\nu}$ & $\frac{2\pi k}{c}$ & $2\pi\omega$ \\[1ex] \hline
+$\bar{\nu}$ & $\frac{1}{\lambda}$ & $\frac{\nu}{c}$ & $1$ & $\frac{2\pi}{k}$ & $\frac{2\pi \omega}{c}$ \\ [1ex] \hline
+$k$ & $\frac{2\pi}{\lambda}$ & $\frac{\nu c}{2\pi}$ & $\frac{\bar{\nu}}{2\pi}$ & $1$ & $\frac{1}{c\omega}$ \\[1ex] \hline
+$\omega$ & $\frac{2\pi c}{\lambda}$ & $\frac{\nu}{2\pi}$ & $\frac{2\pi \bar{\nu}}{c}$ & $ck$ & $1$ \\ [1ex] \hline
+\end{tabular}
+\caption{Conversion between wave parameters}
+\end{table}
+
 \section{Radiomentric Quantities}
 
 \begin{table}[H]
@@ -106,30 +121,30 @@ $v_p$           & v-sub-p    & Phase speed – speed at which wave phase propaga
 \hline
 \textbf{Quantity} & \textbf{Symbol} & \textbf{Units} & \textbf{Physical Meaning} & \textbf{Equation} \\
 \hline
-Radiant Power 
-\newline (Radiative Flux) 
+Radiant Power
+\newline (Radiative Flux)
 & \( \Phi \), \( F \)
-& \si{\watt} 
+& \si{\watt}
 & Total radiant energy emitted, transferred, or received per second.
 & \( \Phi = \frac{dQ}{dt} \) \\
 \hline
-Radiant Energy 
-\newline (Thermal energy) 
+Radiant Energy
+\newline (Thermal energy)
 & \( Q_e \), \( E \), \( W \)
-& \si{\joule} 
+& \si{\joule}
 & Total electromagnetic energy accumulated over time.
 & \( Q = \int \Phi(t)\, dt \) \\
 \hline
-Radiant Power per Unit Area 
-\newline (Irradiance, 
-\newline Radiative Flux Density, 
-\newline Exitance) 
+Radiant Power per Unit Area
+\newline (Irradiance,
+\newline Radiative Flux Density,
+\newline Exitance)
 & \( E \), \( I \)
 & \si{\watt\per\meter\squared}
 & Power received per unit surface area (in, through, or out).
 & \( E = \frac{d\Phi}{dA} \) \\
 \hline
-Radiance 
+Radiance
 \newline (Specific Intensity)
 & \( L \)
 & \si{\watt\per\meter\squared\per\steradian}
@@ -165,7 +180,7 @@ $T_p = \left( \dfrac{(1 - A) F}{\sigma} \right)^{1/4}$ & Effective Temperature o
 \hline
 $L_\star = 4\pi R_\star^2 \sigma T_\star^4$ & Stefan–Boltzmann Law (Star Luminosity) & W (watts) \\
 \hline
-$F = \dfrac{L_\star}{4\pi d^2}$ & Solar Constant / Stellar Flux at Planet & W/m\textsuperscript{2} \\
+$F = \dfrac{L_\star}{4\pi d^2}$ & Solar Constant / Stellar Flux at Planet & W/m\textsuperscript{2} \\[1ex]
 \hline
 $T_p = \left( \dfrac{(1 - A) F}{\sigma} \right)^{1/4}$ & Effective Temperature of a Planet & K (kelvin) \\
 \hline
