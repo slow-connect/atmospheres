@@ -18,6 +18,9 @@
 \pagestyle{fancy}
 \fancyhf{}
 
+\let\d\dontneedyou
+\DeclareMathOperator{\d}{d}
+
 \setlength{\parskip}{1em} % Space between paragraphs
 \setlength{\parindent}{0pt}
 
@@ -214,16 +217,69 @@ $T_p = \left( \dfrac{(1 - A) F}{\sigma} \right)^{1/4}$ & Effective Temperature o
 
 Gives the change of intensity of light as it passes through a medium;
 \begin{equation*}
-	\d I_\lambda = I_\lambda(s + \d s) - I_\lambda(s)
+	\d I_\lambda = I_\lambda(s + \d s) - I_\lambda(s) = -I_\lambda(s)\beta_e(s) \d s
+\end{equation*}
+can be written as
+\begin{equation*}
+	\frac{\d I_\lambda}{I_\lambda} = \d \log I_\lambda = - \beta_s \d s
 \end{equation*}
 or integrating out
 \begin{equation}
 	I_\lambda(s_2) = I_\lambda(s_1) \exp\left[- \int_{s_1}^{s_2} \beta_e(s) \d s \right]
 \end{equation}
 
+Optical Depth is defined as:
+\begin{equation}
+    \tau(s_1, s_2) = \int_{s_1}^{s_2} \beta_e(s) \d s
+\end{equation}
+
+\subsection{Scattering}
+
+For scattering the dimensionless parameter is defined as:
+\begin{equation}
+	x = \frac{2\pi r}{\lambda}
+\end{equation}
+which relates the size of the particle with the wavelength. For $x \in (0.2, 0.002)$, we observe Rayleigh scattering. For $x \in (2000, 0.02)$, we observe Mie scattering. \\
+
+Rayleigh scattering is driven by the electric dipole moment of the photon induces oscillation of the electrons in the atmospheric gases. \\\
+
+Mie scattering is driven by larger particles which scatter on a homogeneous sphere. \\
+
+They got different patterns for forward and backward scattering.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\subsection{Energy Balance}
 
+The Earth is in Energy Balance over centuries. Plot of what happens in the atmosphere. Optical transparent, black body at $300K$.
+
+The four main drivers of energy balance are:
+\begin{itemize}
+	\item Radiation
+	\item Latent Heat (Tropics)
+	\item Sensible Heat
+	\item Winds
+\end{itemize}
+
+Global Circulation driven by different energy per area in the tropics. \\
+
+Three transport cells:
+\begin{itemize}
+	\item Hadley Cell
+	\item Ferrel Cell
+	\item Polar Cell
+\end{itemize}
+What would happen if the Earth was rotating faster? \\
+
+Coriolis Force is driving the number of transport cells.
+
+Links with the oceans: \\
+
+Hayline driven with gradient in salinity
+
+Box Model; if measure form a point; lagrange model; if data form ballon; 3D climate models
+
+Fundamental equations of climate models; radiative transfer; eddy mixing; central chemical equation;
 
 \end{document}
