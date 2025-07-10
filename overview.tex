@@ -353,5 +353,92 @@ where $\sigma$ is the extinction coeffitient and $L$ the path length.
 	\varepsilon_\lambda= \frac{L_{\lambda, object}}{L_{\lambda, blackbody}}
 \end{equation}
 
+\textbf{Total Hemispherical Emissivity} is the integrated emissivity across all wavelengths.
+
+\subsection{Solar constants}
+
+The solar constants give the total solar irradiance at the top of the atmosphere. For earth, the solar constant is $1361 \frac{W}{m^2}$ and from geometry, the change of the solar constant with the distance is given by $S_0 \propto \frac{1}{r^2}$.
+
+\subsection{Planck Law, conversion and devirations}
+
+The Planck law describes the spectral distribution of electromagnetic radiation emitted by a black body in thermal equilibrium at a given temperature $T$. It is given by
+
+\begin{subequations}
+\begin{equation}
+	B_\nu(T) = \frac{2h\nu^3}{c^2} \frac{1}{e^{(h\nu/k_BT)}-1}
+\end{equation}
+\begin{equation}
+	B_\lambda(T) = \frac{2hc^2}{\lambda^5} \frac{1}{e^{(hc/\lambda k_BT)}-1}
+\end{equation}
+\end{subequations}
+
+For the conversion use
+\begin{equation}
+	\frac{B_\nu}{\d \nu} = \frac{B_\lambda}{\d \lambda}
+\end{equation}
+
+One can derive the Rayleigh-Jeans law from the Planck law. It is valid for low frequencies / high wavelengths by:
+\begin{equation}
+	\frac{hc}{\lambda k_BT} \ll 1
+\end{equation}
+We then taylor expand the exponential term:
+\begin{equation}
+	\frac{1}{\exp\para{\frac{hc}{\lambda k_BT}} - 1} \approx \frac{1}{\frac{hc}{\lambda k_BT}}
+\end{equation}
+and be put into Planck's law:
+\begin{equation}
+	B_\lambda(T) = \frac{2ck_BT}{\lambda^4}
+\end{equation}
+
+Conversion to RJ in terms of frequencies as above. \\
+
+From Planck's law, we can derive Stefan-Boltzmann law by integrating over all wavelengths:
+\begin{equation}
+	M = \sigma T^4 = \int_0^\infty B_\lambda(T) \d \lambda
+\end{equation}
+
+One can also derive Wien's displacement law from Planck's law by taking the derivative of $B_\lambda$ with respect to $\lambda$ and setting it to zero:
+\begin{equation}
+	\frac{\d B_\lambda}{\d \lambda} = 0
+\end{equation}
+and leads to
+\begin{equation}
+	\lambda_{\max} = \frac{b}{T}
+\end{equation}
+with $b = 2.898 \times 10^{-3} \frac{m\cdot K}{W}$. \\
+
+\textbf{Kirchhoff's Law} is also important for radiation processes; it relates emissivity and absorption within thermal equilibrium. Key assumptions are thermal equilibrium and steady-state conditions. Mathematically, Kirchhoff's Law states that the emissivity of a surface is equal to its absorptivity. This can be expressed as:
+
+\begin{equation}
+	\epsilon(\lambda, T) = \alpha(\lambda, T)
+\end{equation}
+
+\subsection{Temperatures}
+
+\textbf{Brightness Temperature} is the temperature of a blackbody emitting equivalent radiation, it is derived from observed radiation intensity, calculated using Planck's Law inverse. \\
+
+
+\textbf{Effective Temperature} is the theoretical temperature of a blackbody radiating same total energy, calculated from total radiant flux from Stefan-Boltzmann law.
+\begin{equation}
+	T_{\text{eff}} = \left(\frac{L}{\sigma}\right)^{\frac{1}{4}}
+\end{equation}
+
+The planetary albedo, a number between $0$ and $1$ gives us how much light is emitted from a planet. \\
+
+The greenhouse equation is derived from the energy balance equation, which states that the energy received from the Sun minus the energy emitted by the planet must equal the energy absorbed by the atmosphere. This can be expressed as:
+
+\begin{subequations}
+Zero net radiation leaving the top of the atmosphere
+\begin{equation}
+    -\frac{1}{4} S_0 (1 - \alpha_p) + \varepsilon \sigma T_a^4 + (1 - \varepsilon) \sigma T_s^4 = 0
+\end{equation}
+Zero net radiation entering the atmosphere
+\begin{equation}
+	\frac{1}{4} S_0 (1-\alpha_p) + \varepsilon \sigma T_\alpha^4 - \alpha_s^4 = 0
+\end{equation}
+
+\end{subequations}
+
+
 
 \end{document}
