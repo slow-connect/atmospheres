@@ -25,6 +25,7 @@
 \setlength{\parindent}{0pt}
 
 \renewcommand{\to}{\longrightarrow}
+\newcommand{\para}[1]{\left({#1}\right)}
 
 \begin{document}
 
@@ -340,7 +341,7 @@ Frequency $\nu$ and wavelenth $\lambda$ are linked by:
 The \textbf{Optical Thickness} $\tau$ measures how mich light is attenuated when passing a medium. It is a dimensionless quantity. Mathematically, it can be represented as
 
 \begin{equation}
-	\tau = \int_0^L \sigam(z) \d z
+	\tau = \int_0^L \sigma(z) \d z
 \end{equation}
 
 where $\sigma$ is the extinction coeffitient and $L$ the path length.
@@ -349,7 +350,7 @@ where $\sigma$ is the extinction coeffitient and $L$ the path length.
 
 \textbf{Spectral Emissivity} is specific to a specific wavelenght given by
 \begin{equation}
-	\e​\lambda= \frac{L_{\lambda, object}}{L_{\lambda, blackbody}}
+	\varepsilon_\lambda= \frac{L_{\lambda, object}}{L_{\lambda, blackbody}}
 \end{equation}
 
 
