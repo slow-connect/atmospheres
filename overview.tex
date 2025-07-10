@@ -282,4 +282,75 @@ Box Model; if measure form a point; lagrange model; if data form ballon; 3D clim
 
 Fundamental equations of climate models; radiative transfer; eddy mixing; central chemical equation;
 
+
+
+\section{Review sessions}
+
+\subsection{Ideal Gas}
+
+What is an ideal gas? \\
+
+Theoretical gas, where particle are moving randomly. The equation of state is given by:
+
+\begin{equation}
+	pV = RnT
+\end{equation}
+where $p$ is the pressure, $V$ the volume, $R$ the gas constant, $n$ the number of particles in mol and $T$ the temperature.
+
+\subsection{Mixing ratio vs fraction}
+
+The conversion from mixing ratio $w$ to mass fraction $X$ is given by
+\begin{equation}
+	X = \frac{w}{1+w}
+\end{equation}
+To calculate the volume fraction conversion, that depends on the molecular weith of the compounds, we get
+\begin{equation}
+	X_V = \frac{w M_1}{wM_1 + M_2}
+\end{equation}
+where $M_i$ is the molecular weith of the gas compounds.
+
+\subsection{Adiabat}
+
+An \emph{adiabatic} process is a physical process where no heat is exchanged between the system and its surroundings. \\
+
+For an ideal gas the adiabatic temperature  change is given by
+
+\begin{equation}
+	T_2 = T_1 \para{\frac{p_1}{p_2}}^{\frac{1 - \gamma}{\gamma}}
+\end{equation}
+
+The potential temperature is the temoerature that an air parcel qwould habve if it were brought to a normal pressuree by adiabatic change. Is is given by
+
+\begin{equation}
+	\theta(p, T) = T \para{\frac{p}{p_0}}^{\frac{1 - \gamma}{\gamma}} \approx T \para{\frac{1013}{p}}^{0.286}
+\end{equation}
+
+Frequency $\nu$ and wavelenth $\lambda$ are linked by:
+
+\begin{equation}
+	c = \lambda \nu
+\end{equation}
+
+\textbf{Radiance} measures the electromagnetic radiation emitted from the surface. It quantifies the amount of light flowing in a specific direction. It is given in $\frac{W}{m^2sr}$. \textbf{Spectral radiance} measures the electric radiation emitted from a surface at a specific wavelength. It is given in $\frac{W}{m^2 nm sr}$. \\
+
+\textbf{Irradiance} measures the total electromagnetic radiation incident on a surface. It is given in units $\frac{W}{m^2}$. \textbf{Specrtal irradiance} measures the irradiance at a specific wavelength, in units of $\frac{W}{m^2nm}$. \\
+
+\textbf{Transmission} is given by a number between $0$ and $1$ that tells us how much of the light thats get into a volume gets out. \\
+
+The \textbf{Optical Thickness} $\tau$ measures how mich light is attenuated when passing a medium. It is a dimensionless quantity. Mathematically, it can be represented as
+
+\begin{equation}
+	\tau = \int_0^L \sigam(z) \d z
+\end{equation}
+
+where $\sigma$ is the extinction coeffitient and $L$ the path length.
+
+\subsection{Emissivities}
+
+\textbf{Spectral Emissivity} is specific to a specific wavelenght given by
+\begin{equation}
+	\e​\lambda= \frac{L_{\lambda, object}}{L_{\lambda, blackbody}}
+\end{equation}
+
+
 \end{document}
