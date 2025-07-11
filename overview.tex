@@ -440,5 +440,50 @@ Zero net radiation entering the atmosphere
 \end{subequations}
 
 
+\subsection{Absorption and Broadening}
+
+Absorption happens when a photon with the right energy hits an atom or a molecule so that it can increase the energy state of the atom or molecule. This is called excitation. Once excited, the atom or molecule can return to its ground state by emitting a photon. \\
+
+Line broadening is the process by which the spectral line width increases due to Doppler breadening or Lorentz broadening. \\
+
+Doppler broadening occurs due to the thermal motion of atoms or molecules in a gas. As particles move at different velocities:
+\begin{itemize}
+    \item Some particles move toward the observer (causing a blueshift)
+    \item Some particles move away from the observer (causing a redshift)
+    \item This relative motion causes a spread in the observed spectral line frequency
+\end{itemize}
+
+Key characteristics:
+\begin{itemize}
+    \item Depends on temperature of the gas
+    \item Follows a Gaussian distribution of line profiles
+    \item Increases with higher temperatures
+    \item Proportional to the square root of (T/M), where T is temperature and M is molecular mass
+\end{itemize}
+
+\begin{equation}
+    \alpha_D = f_0 \sqrt{\frac{2k_B T}{mc^2}}
+\end{equation}
+where $m$ is the mass of the emitting particle.
+
+Lorentz broadening (or natural broadening) is caused by the finite lifetime of excited atomic states:
+\begin{itemize}
+    \item Quantum mechanically, an excited state cannot be perfectly stationary
+    \item The Heisenberg uncertainty principle implies that the energy level has an inherent uncertainty
+    \item This uncertainty leads to a natural width of spectral lines
+    \item Follows a Lorentzian distribution
+    \item Primarily related to the spontaneous emission lifetime of the excited state
+\end{itemize}
+
+Key differences:
+\begin{itemize}
+    \item Doppler broadening is thermal/kinetic in origin
+    \item Lorentz broadening is quantum mechanical in nature
+    \item Doppler broadening depends on temperature
+    \item Lorentz broadening depends on atomic transition properties
+\end{itemize}
+\begin{equation}
+    \alpha_L = \alpha_0 \frac{p}{p_0} \sqrt{\frac{T_0}{T}}
+\end{equation}
 
 \end{document}
